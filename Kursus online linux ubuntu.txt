@@ -1,0 +1,58 @@
+
+Kursus online linux ubuntu
+—————————————————————
+
+1. Belajar Dakar comand linux.(coding studio)
+    1. Pengenalan linux
+        1. whoami : cara cek user yg d gunakan.
+        2. Pwd : print working directory / cel d directory mana.
+        3. Man: cek help manual contoh “man pwd”. Dan d jelaskan cara penggunaan. Cara keluar tekan tombol q.
+        4. Ls : list tau isi d directory saat ini.
+        5. Ls -la: di tampilkan all 
+        6. Clear :membersihkan terminal
+        7. Touch : membuat file timestamp (touch data.txt)
+        8. File : file data.dxt
+        9. Mkdir: mkdir adalah make directory tau membuat directory baru (mkdir folder_baru)
+        10. Cd : change directory (cd folder_baru)
+        11. Cp: atau copy (cp ../data.txt .)
+        12. Mv : move (mv data.txt ../Documents/)
+        13. Rm : remove (rm data.txt)
+        14. Rmdir : hapus folder (rmdir folfer_baru)
+        15. Mkdir -p : membuat dua tau lebih folder secara bersamaan (mkdir new_folder/new_folder2 -p) parrent
+        16. Rm : menghapus folder dental rm (rm new_folder -r ) recursive
+        17. Sudo : sudoedit, menjalankan sebum user dengan user lain (sudo su) @root.
+        18. Exit : untuk keluar.
+        19. History : cek perintah .
+    2. Linux shell command
+        1. Apt : Command-line interface update upgrade install remove dll (  )
+        2. Sources.list : cd /etc/apt.    sudo nano source.list
+        3. Menambah repository : deb alamat repository  control X lalu Y
+        4. Sudo apt update :update repo
+        5. Sudo apt install xxx
+        6. Sudo apt remove xxx
+        7. Sudo apt upgrade 
+    3. Command line
+    4. Permission,redirection
+        1. Redirection : output sebelum perintah dan diteruskan ke sebkha file atau di lanjutkan sebagai perintah (ls > ls.txt) menampilkan hais dari perintah ls ke ls.txt , cat ls.txtKika ingin mengabungkan tampa menimpa isi maka (ls -la >> ls.txt) input redirection, input sebum data dari sebuah file atai perintah (wc -c < ls.txt).
+        2. Find . -iname *.txt
+        3. Grep : akan print basis matching dengan pattern (ls | grep *.txt) meneruskan output hasil ke perintah selanjutny
+        4. Dan dan / && : menjalankan perintah berurutan (ls && whom)
+        5. Permissions: hak akses (ls -a) owner group othervalue of permissionr read 4w write 2x execute 1ownerRwx 421 7group r-x 401 5other r-x 401 5ls.txt 644 -> 755(chmod 755 ls.txt)
+    5. Terminal linux
+        1. baground : menjalankan d belakang layar (nano &)
+        2. Jobs: cek app berjalan 
+        3. foreground : menampilkan app aground menjadi di depan layar (fg 1)
+        4. Ps : menampillkan isi dari proses yang sedans berjalan ps aux :menampilkan proses detail
+        5. Toptop -bc:match mode c comment line( top -bc | grep nano) stop dental control c
+        6. Renice : (sudo renice -n -17 -p 5102)ni : nice / priorités -20 sampan -29  
+    6. Soal project
+        1. Membuat directory seperti Struktur dibawahkodio   -Programing        - C        - Java   -Networking       - MikrotikJawab :mkdir -p Kodio/{Programing/{C,Java},Networking/Mikrotik}
+        2. Membuat file history.txt yang berisikan perintah yang telah digunakan sebelumny.Jawab:history > history.txt
+        3. Melakukan upgrade fitter menggunakan automatisasi saat terdapat from pertanyaan yes or noJawab: sudo apt upgrade -y
+        4. Melakukan backup dengan mengcopy source.list ke sebuah file baru bernama source.list.backupJawab: sudo cp /etc/apt/sourcelist /etc/apt/source.list.backup
+        5. Melakukan perintah update dan upgrade pada satu perintahJawab:sudo apt update && sudo apt upgrade
+        6. Melakukan pencarian file dengan extension “.txt” di folder saatini:jawab:find . -name “*.txt”
+        7. Menampilkan history perintah yang memiliki kata “sudo” didalamnyjawab:history | grep sudo
+        8. Membuat file history.txt memiliki has role user : read write dan execute 7group dan other : read 44Jawab : chmod 744 history.txt
+        9. Menampilkan semi proses yang sedang berjalan perintah psjawab:ps aux
+        10. menampilkan proses bedasarkan penggunaan memory terrendah ke tertinggi dengan perintah topjawab: top -o -%MEM
